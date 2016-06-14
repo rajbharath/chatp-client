@@ -1,0 +1,27 @@
+<ion-view>
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="message in chat.messages">
+        {{ message.text }}
+      </ion-item>
+    </ion-list>
+
+    <ion-footer>
+    <div class="list list-inset">
+      <div class="row">
+        <div class='col'>
+            <label class="item item-input">
+              <input type="text" ng-model="chat.newMessage" placeholder="Enter Message...">
+            </label>
+        </div>
+        <div class='col-offset-1'>
+          <div class="buttons" ng-click="sendMessage()">
+            <button class="button icon-right ion-paper-airplane button-dark">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </ion-footer>
+  </ion-content>
+</ion-view>

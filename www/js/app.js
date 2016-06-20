@@ -1,4 +1,4 @@
-angular.module('chatp', ['ionic', 'chatp.controllers'])
+angular.module('chatp', ['ionic', 'chatp.controllers', 'chatp.factories'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
